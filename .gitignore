@@ -1,0 +1,7 @@
+vim/bundle/*
+-vim/bundle/Vundle.vim
+
+vim/backups/*
+vim/swap/*
+
+vim/.netrwhist
