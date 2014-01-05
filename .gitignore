@@ -1,0 +1,9 @@
+vim/bundle/*
+!vim/bundle/.gitkeep
+!vim/bundle/Vundle.vim
+vim/backups/*
+!vim/backups/.gitkeep
+vim/swap/*
+!vim/swap/.gitkeep
+
+vim/.netrwhist

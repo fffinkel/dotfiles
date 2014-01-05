@@ -1,0 +1,10 @@
+[user]
+	name = Matt Finkel
+	email = finkel.matt@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[push]
+	default = upstream

@@ -1,0 +1,8 @@
+
+shelltitle '$ |'
+defscrollback 40000
+
+caption always "%{b kw} %H | %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*" | tr -d "[:digit:]."'
+
+setenv SSH_AUTH_SOCK $HOME/.ssh/auth.sock
