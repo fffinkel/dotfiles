@@ -1,0 +1,19 @@
+shelltitle '$ |'
+
+#hardstatus alwayslastline "%{b kw} %H %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+caption always "%{b kw} %H %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+defscrollback 40000
+
+
+#chdir '/home/mfinkel/src/Notebook/'
+#screen 0 bash
+
+chdir '/home/mfinkel/'
+#screen 1 bash
+#screen 9 bash
+#screen 10 bash
+#screen 11 bash
+#screen -t psql 9 psql blackjack_dev_mfinkel
+#screen -t re.pl 10 re.pl
+#screen -t irssi 11 irssi
+#screen -t vim 1 vim 
