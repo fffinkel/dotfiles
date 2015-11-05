@@ -5,7 +5,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "localhost";
@@ -13,7 +13,7 @@ servers = (
     port = "6667";
     use_ssl = "no";
     ssl_verify = "no";
-    autoconnect = "yes";
+    autoconnect = "no";
   },
   {
     address = "mfinkel.net";
@@ -56,30 +56,33 @@ chatnets = {
 };
 
 channels = (
-  { name = "#dev"; chatnet = "Corvisa"; autojoin = "yes"; },
-  { name = "#it"; chatnet = "Corvisa"; autojoin = "yes"; },
-  { name = "#crimson"; chatnet = "Corvisa"; autojoin = "yes"; },
-  { name = "#blackjack"; chatnet = "Corvisa"; autojoin = "yes"; },
+  { name = "#dev"; chatnet = "Corvisa"; autojoin = "no"; },
+  { name = "#it"; chatnet = "Corvisa"; autojoin = "no"; },
+  { name = "#crimson"; chatnet = "Corvisa"; autojoin = "no"; },
+  { name = "#blackjack"; chatnet = "Corvisa"; autojoin = "no"; },
   { name = "#qc"; chatnet = "Corvisa"; autojoin = "no"; },
   { name = "#perl"; chatnet = "Corvisa"; autojoin = "yes"; },
   { name = "#cloud"; chatnet = "Corvisa"; autojoin = "no"; },
   { name = "#arcade"; chatnet = "Corvisa"; autojoin = "no"; },
+  { name = "#cirrus"; chatnet = "Corvisa"; autojoin = "yes"; },
+  { name = "#quiettime"; chatnet = "Corvisa"; autojoin = "yes"; },
   { name = "&bitlbee"; chatnet = "BitlBee"; autojoin = "yes"; },
 
-  { name = "#catalyst"; chatnet = "Perl_proxy"; autojoin = "yes"; },
-  { name = "#moose"; chatnet = "Perl_proxy"; autojoin = "yes"; },
-  { name = "#dbix-class"; chatnet = "Perl_proxy"; autojoin = "yes"; },
-  { name = "#perl"; chatnet = "Perl_proxy"; autojoin = "yes"; },
-  { name = "#milwaukee-pm"; chatnet = "Perl_proxy"; autojoin = "yes"; },
+  { name = "#catalyst"; chatnet = "Perl_proxy"; autojoin = "no"; },
+  { name = "#moose"; chatnet = "Perl_proxy"; autojoin = "no"; },
+  { name = "#dbix-class"; chatnet = "Perl_proxy"; autojoin = "no"; },
+  { name = "#perl"; chatnet = "Perl_proxy"; autojoin = "no"; },
+  { name = "#milwaukee-pm"; chatnet = "Perl_proxy"; autojoin = "no"; },
   { name = "#devmke"; chatnet = "Freenode_proxy"; autojoin = "no"; },
-  { name = "#mkedev"; chatnet = "Freenode_proxy"; autojoin = "yes"; },
+  { name = "#mkedev"; chatnet = "Freenode_proxy"; autojoin = "no"; },
   { name = "&bitlbee"; chatnet = "BitlBee_proxy"; autojoin = "yes"; }
 );
 
 ignores = (
   { level = "JOINS PARTS QUITS MODES"; },
   { mask = "imgbot"; level = "ALL"; },
-  { mask = "cleverbot"; level = "ALL"; }
+  { mask = "cleverbot"; level = "ALL"; },
+  # { mask = "hitbot"; level = "ALL"; }
 );
 
 aliases = {
@@ -254,13 +257,6 @@ statusbar = {
         barend = { priority = "100"; alignment = "right"; };
       };
     };
-    awl_1 = {
-      items = {
-        barstart = { priority = "100"; };
-        awl_1 = { };
-        barend = { priority = "100"; alignment = "right"; };
-      };
-    };
   };
 };
 settings = {
@@ -281,6 +277,8 @@ settings = {
     windows_auto_renumber = "no";
     activity_hide_targets = "#twitter_fffinkel #it";
     autolog = "yes";
+    bell_beeps = "yes";
+    beep_msg_level = "MSGS HILIGHT";
   };
 };
 logs = { };

@@ -1,10 +1,10 @@
 [user]
 	name = Matt Finkel
-	email = finkel.matt@gmail.com
+	email = matthew.finkel@corvisa.com
 [color]
 	branch = auto
 	diff = auto
 	interactive = auto
 	status = auto
 [push]
-	default = current
+	default = upstream

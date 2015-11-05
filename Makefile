@@ -1,13 +1,13 @@
 clean:
-	rm ~/.dzil
-	rm ~/.gitconfig
-	rm ~/.irssi
-	rm ~/.perltidyrc
-	rm ~/.psqlrc
-	rm ~/.screenrc
-	rm ~/.ratpoisonrc
-	rm ~/.xinitrc
-	rm ~/.Xmodmap
+	-rm ~/.dzil
+	-rm ~/.gitconfig
+	-rm ~/.irssi
+	-rm ~/.perltidyrc
+	-rm ~/.psqlrc
+	-rm ~/.screenrc
+	-rm ~/.ratpoisonrc
+	-rm ~/.xinitrc
+	-rm ~/.Xmodmap
 
 install: clean
 	ln -s $$(pwd)/dzil ~/.dzil

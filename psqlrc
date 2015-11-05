@@ -1,1 +1,8 @@
 \pset expanded auto
+\set COMP_KEYWORD_CASE upper
+\timing
+--\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+\set VERBOSITY verbose
+
+--\set PROMPT1 '%[%033[1m%]%M/%/%R%[%033[0m%]%# '
+--\set PROMPT2 ''
