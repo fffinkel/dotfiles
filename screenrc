@@ -1,8 +1,10 @@
 shelltitle '$ |'
 
 #hardstatus alwayslastline "%{b kw} %H %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
-caption always "%{b kw} %H %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+#caption always "%{b kw} %` | %H %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+caption always "%{b kw} %H | %` %{r}%1`%{w}| %l %{w}|%{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
 defscrollback 40000
+backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*" | tr -d "[:digit:]."'
 
 
 #chdir '/home/mfinkel/src/Notebook/'
@@ -17,3 +19,4 @@ chdir '/home/mfinkel/'
 #screen -t re.pl 10 re.pl
 #screen -t irssi 11 irssi
 #screen -t vim 1 vim 
+
