@@ -1,8 +1,5 @@
 clean:
 	-rm ~/.dzil
-	-rm ~/.gitconfig
-	-rm ~/.irssi
-	-rm ~/.perltidyrc
 	-rm ~/.psqlrc
 	-rm ~/.screenrc
 	-rm ~/.ratpoisonrc
@@ -11,9 +8,6 @@ clean:
 
 install: clean
 	ln -s $$(pwd)/dzil ~/.dzil
-	ln -s $$(pwd)/gitconfig ~/.gitconfig
-	ln -s $$(pwd)/irssi ~/.irssi
-	ln -s $$(pwd)/perltidyrc ~/.perltidyrc
 	ln -s $$(pwd)/psqlrc ~/.psqlrc
 	ln -s $$(pwd)/screenrc ~/.screenrc
 	ln -s $$(pwd)/ratpoisonrc ~/.ratpoisonrc
