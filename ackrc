@@ -399,3 +399,7 @@
 # YAML
 # http://yaml.org/
 --type-add=yaml:ext:yaml,yml
+
+# Stuff that annoys me
+--ignore-dir=bundle-output
+--ignore-dir=ext:backup
