@@ -4,7 +4,7 @@ clean:
 	-rm ~/.ssh/rc
 
 install: clean
-	ln -s $$(pwd)/ackrc ~/.ackrc
-	ln -s $$(pwd)/screenrc ~/.screenrc
-	ln -s $$(pwd)/sshrc ~/.ssh/rc
+	ln -s ~/cnf/dotfiles/ackrc ~/.ackrc
+	ln -s ~/cnf/dotfiles/screenrc ~/.screenrc
+	ln -s ~/cnf/dotfiles/sshrc ~/.ssh/rc
 
