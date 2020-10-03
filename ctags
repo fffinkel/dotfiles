@@ -1,0 +1,1 @@
+--regex-go=/\/\/\sTODO(.*)/\1/d,todo,todos/
