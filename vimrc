@@ -10,6 +10,9 @@ filetype plugin indent on
 au BufRead,BufNewFile *.t set filetype=perl
 syntax on
 
+au BufRead,BufNewFile *.md setlocal textwidth=80
+au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+
 scriptencoding utf-8
 set encoding=utf-8
 
@@ -18,8 +21,6 @@ au BufWritePost ~/.vimrc :source ~/.vimrc
 
 au BufWritePost ~/.zsh/* :source ~/.zshrc
 au BufWritePost ~/.zshrc :!source ~/.zshrc
-
-au BufRead,BufNewFile *.md setlocal textwidth=80
 
 source ~/.vim/plugins.vim
 source ~/.vim/settings.vim
