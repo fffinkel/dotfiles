@@ -3,6 +3,7 @@ DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 clean:
 	-rm ~/.ackrc
 	-rm ~/.ctags
+	-rm ~/.gitconfig
 	-rm ~/.screenrc
 	-rm ~/.ssh/rc
 	-rm ~/.vim
@@ -15,6 +16,7 @@ install: clean
 	git -C $(DIR) submodule update
 	ln -s $(DIR)/ackrc ~/.ackrc
 	ln -s $(DIR)/screenrc ~/.screenrc
+	ln -s $(DIR)/gitconfig ~/.gitconfig
 	ln -s $(DIR)/sshrc ~/.ssh/rc
 	ln -s $(DIR)/ctags ~/.ctags
 	ln -s $(DIR)/vim/ ~/.vim
