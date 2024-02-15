@@ -27,4 +27,9 @@ Plugin 'mileszs/ack.vim'
 " golang
 Plugin 'fatih/vim-go'
 
+" yaml
+Plugin 'pedrohdz/vim-yaml-folds'
+Plugin 'lmeijvogel/vim-yaml-helper'
+
 call vundle#end()
+filetype on
