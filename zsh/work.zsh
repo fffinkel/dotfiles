@@ -1,2 +1,2 @@
 
-~/src/gerber/bin/gerber summary
+~/src/github.com/fffinkel/gerber/bin/gerber summary

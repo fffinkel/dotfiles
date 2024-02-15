@@ -37,7 +37,7 @@ fi
 
 # (~/.zsh/repocheck.zsh &) 2>/dev/null
 
-PATH=~/src/gerber/bin:$PATH
+PATH=~/src/github.com/fffinkel/gerber/bin:$PATH
 
-cd ~/Desktop
+cd ~
 
