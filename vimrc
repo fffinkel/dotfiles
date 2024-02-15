@@ -5,13 +5,13 @@ filetype off
 "set background=dark
 "colorscheme solarized8
 
+set fo+=t
 set rtp+=$GOROOT/misc/vim
 filetype plugin indent on
 au BufRead,BufNewFile *.t set filetype=perl
 syntax on
 
-au BufRead,BufNewFile *.md setlocal textwidth=80
-au BufNewFile,BufFilePre,BufRead *.md set filetype=markdown
+au BufRead,BufFilePre,BufNewFile *.md setlocal textwidth=80 filetype=markdown
 
 scriptencoding utf-8
 set encoding=utf-8
