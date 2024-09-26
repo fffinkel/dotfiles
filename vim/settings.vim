@@ -6,6 +6,7 @@ set colorcolumn=81 " column to indicate long lines
 set tw=80 " word wrap / TODO: this sucks
 set fo=tcqb " auto-wrap, auto-add comment leader, allow use of gq, don't auto-wrap long lines
 set directory=~/.vim/swap/ " swap dir
+set textwidth=80
 
 "TODO: comments
 "
@@ -80,3 +81,7 @@ let g:ackprg = 'ag --vimgrep'
 "   let &grepprg = "ag --vimgrep"
 "   set grepformat^=%f:%l:%c:%m
 " endif
+
+" Copilot
+imap <silent><script><expr> <C-e> copilot#Accept("\<CR>")
+let g:copilot_no_tab_map = v:true

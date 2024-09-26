@@ -31,5 +31,11 @@ Plugin 'fatih/vim-go'
 Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'lmeijvogel/vim-yaml-helper'
 
+" copilot
+Plugin 'github/copilot.vim'
+
+" cue
+Plugin 'jjo/vim-cue'
+
 call vundle#end()
 filetype on
