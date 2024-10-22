@@ -27,3 +27,5 @@ source ~/.vim/settings.vim
 source ~/.vim/mappings.vim
 
 set completeopt+=longest,noselect,menuone,preview
+
+set re=2
