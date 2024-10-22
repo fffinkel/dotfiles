@@ -41,3 +41,4 @@ PATH=~/src/github.com/fffinkel/gerber/bin:$PATH
 
 cd ~
 
+export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
