@@ -5,6 +5,8 @@ alias sls='screen -ls'
 alias vi='vim -p'
 alias woo='vim -p $(~/src/github.com/fffinkel/gerber/bin/gerber recent)'
 
+alias jqq="jq -R '. as \$line | try (fromjson) catch \$line'"
+
 # git!
 alias ga='git add'
 alias gb='git branch'
