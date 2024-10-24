@@ -28,7 +28,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'fatih/vim-go'
 
 " yaml
-Plugin 'pedrohdz/vim-yaml-folds'
 Plugin 'lmeijvogel/vim-yaml-helper'
 
 " copilot
