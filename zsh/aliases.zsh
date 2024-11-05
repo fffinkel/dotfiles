@@ -21,7 +21,7 @@ alias grh='git reset HEAD'
 alias gri='git rebase -i'
 alias gggg='git add . && git stash'
 alias gst='git status'
-
+alias wipush='git commit -am "wip" && git push'
 alias bbbb='grb && gfr'
 alias mlem='git diff $(git merge-base origin/main HEAD)..HEAD'
 alias newnew='git fetch origin main && git checkout origin/main'
