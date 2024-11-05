@@ -22,25 +22,15 @@ alias glo='git log --graph --stat'
 alias glog='git log -p --graph'
 alias grh='git reset HEAD'
 alias gri='git rebase -i'
-alias gsl='git stash list'
-alias gsp='git stash pop'
 alias gggg='git add . && git stash'
 alias gst='git status'
 
-alias gbi='git add . && git commit --verbose'
-alias trsh='gb | grep -v "^*" | xargs git branch -d'
 alias bbbb='grb && gfr'
 alias bp='gl origin/main..'
 alias bop='glo origin/main..'
 alias boop='glog origin/main..'
 alias mlem='git diff $(git merge-base origin/main HEAD)..HEAD'
 alias newnew='git fetch origin main && git checkout origin/main'
-
-alias wtf='git log --'
-alias wtaf='git log -p --'
-
-# k8s!
-alias nude='kc get nodes -L kops.k8s.io/instance-group -L node.kubernetes.io/instance-type -L karpenter.sh/provisioner-name --sort-by=.metadata.creationTimestamp'
 
 function git_rebase_branch() {
   head=$(git rev-parse --abbrev-ref HEAD)
