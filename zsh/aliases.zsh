@@ -17,20 +17,21 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gf='git fetch origin main'
 alias gfr='git fetch origin main && git rebase origin/main'
-alias gl='git log --graph --pretty="format:%h %s"'
-alias glo='git log --graph --stat'
-alias glog='git log -p --graph'
 alias grh='git reset HEAD'
 alias gri='git rebase -i'
 alias gggg='git add . && git stash'
 alias gst='git status'
 
 alias bbbb='grb && gfr'
+alias mlem='git diff $(git merge-base origin/main HEAD)..HEAD'
+alias newnew='git fetch origin main && git checkout origin/main'
+
+alias gl='git log --graph --pretty="format:%h %s"'
+alias glo='git log --graph --stat'
+alias glog='git log -p --graph'
 alias bp='gl origin/main..'
 alias bop='glo origin/main..'
 alias boop='glog origin/main..'
-alias mlem='git diff $(git merge-base origin/main HEAD)..HEAD'
-alias newnew='git fetch origin main && git checkout origin/main'
 
 function git_rebase_branch() {
   head=$(git rev-parse --abbrev-ref HEAD)
