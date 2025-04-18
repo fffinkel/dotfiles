@@ -6,5 +6,33 @@
 	diff = auto
 	interactive = auto
 	status = auto
+; [column]
+; 	ui = auto
 [push]
 	default = upstream
+	autoSetupRemote = true
+	followTags = true
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[core]
+	excludesfile = ~/.gitignore
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
